@@ -1,6 +1,6 @@
-const express = require('express');
-const todos = require('./todos.route.js');
-const apiRoutes = require('./api.route.js');
+import express from 'express';
+import todos from './todos.route.js';
+import apiRoutes from './api.route.js';
 
 function routes() {
   const router = express.Router();

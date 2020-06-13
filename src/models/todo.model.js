@@ -5,8 +5,6 @@ const todoSchema = new Schema({
   title: String,
   description: String,
   completed: Boolean,
-  deadline: String,
-  createdAt: String,
 });
 
 const todoModel = model('todo', todoSchema, 'todos');

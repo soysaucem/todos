@@ -1,24 +1,14 @@
-const express = require('express');
-const todoItems = require('../../mock-data.js');
+import express from 'express';
+import todoController from '../controllers/todo.controller';
 
 function apiRoutes() {
   const router = express.Router();
 
-  router.get('/todos', (req, res) => {
-    res.json(todoItems);
-  });
+  router.get('/todos', todoController.getTodos);
 
-  router.get('/todos/:id', (req, res) => {
-    const { id } = req.params;
-    const todoItem = todoItems.find((item) => item.id === id);
+  router.get('/todos/:id', todoController.getTodo);
 
-    res.json(todoItem);
-  });
-
-  router.post('/todos', (req, res) => {
-    console.log(req.body);
-    res.status(204).send();
-  });
+  router.post('/todos', todoController.addTodo);
 
   // router.put('/todos/:id', (req, res) => {});
 
