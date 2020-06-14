@@ -7,6 +7,4 @@ const todoSchema = new Schema({
   completed: Boolean,
 });
 
-const todoModel = model('todo', todoSchema, 'todos');
-
-module.exports = todoModel;
+export const Todo = model('todo', todoSchema, 'todos');

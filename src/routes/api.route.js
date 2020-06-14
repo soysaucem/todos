@@ -1,7 +1,7 @@
 import express from 'express';
-import todoController from '../controllers/todo.controller';
+import * as todoController from '../controllers/todo.controller';
 
-function apiRoutes() {
+export function apiRoutes() {
   const router = express.Router();
 
   router.get('/todos', todoController.getTodos);
@@ -16,5 +16,3 @@ function apiRoutes() {
 
   return router;
 }
-
-module.exports = apiRoutes;

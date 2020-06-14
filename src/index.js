@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import path from 'path';
 import mongoose from 'mongoose';
 import sassMiddleware from 'node-sass-middleware';
-import routes from './routes/index.route';
+import { routes } from './routes/index.route';
 
 const app = express();
 const PORT = 3000;

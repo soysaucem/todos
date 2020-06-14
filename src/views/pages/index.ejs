@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/stylesheets/base.css" />
   </head>
   <body>
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
       <form class="todo-form" method="post" action="/api/todos">
         <div class="form-group">
           <label for="todoTitle">Title</label>
@@ -18,7 +18,7 @@
         <button type="submit" class="btn btn-primary" onclick="addTodo(event)">Add</button>
       </form>
       </div>
-      <%- include ("../partials/scripts") %>
     </div>
+    <%- include ("../partials/scripts") %>
   </body>
 </html>

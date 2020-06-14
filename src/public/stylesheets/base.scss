@@ -1,9 +1,15 @@
 body {
   margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 .container {
   .todo-form {
+    width: 600px;
+  }
+
+  .todo-item {
+    margin-top: 20px;
     width: 600px;
   }
 }
